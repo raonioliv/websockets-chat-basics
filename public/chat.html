@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/chat.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h3>Bem vindo ao CHAT</h3>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <section>
+            <div class="chat">
+                <div class="chat-header roboto-bold">
+                    <h3 id="chat-name"></h3>
+                    <button id="logout-btn" type="button">
+                        <img src="./images/logout.svg" alt="Sair da sala">
+                    </button>
+                </div>
+                <div id="chat-messages">
+
+
+                </div>
+
+                <div class="chat-send-message">
+                    <div class="input-message">
+                        <input placeholder="Envie uma mensagem :)" id="send-message-input" type="text">
+
+                        <div class="enter-msg">
+                            <img class="enter-msg-btn" role="button" src="images/send.svg" alt="Enviar">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/chat.js"></script>
+</body>
+</html>

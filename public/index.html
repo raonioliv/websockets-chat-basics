@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salas</title>
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/home.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h3>Bem vindo ao CHAT</h3>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="enter-chat">
+                <div class="rooms">
+                    <div class="form-title">
+                        <h3>Entre em uma sala</h3>
+                    </div>
+                    <form id="chat-form" name="enter-room" action="./chat.html">
+                        <div class="form-group custom-select">
+                            <label for="room-select">Sala:</label>
+                            <select name="room" id="room-select">
+                                <option value="programming">Programação</option>
+                                <option value="food">Comidas</option>
+                                <option value="soccer">Futebol</option>
+                                <option value="games">Video Game</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nickname">Nickname:</label>
+                            <input 
+                                name="nickname"
+                                id="nickname"
+                                type="text">
+                        </div>
+
+                        <div id="error-message"></div>
+                        <div class="form-group">
+                            <button class="btn btn-primary" id="enter-room" type="submit">
+                                Entrar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="./js/validation.js"></script>
+</body>
+
+</html>
